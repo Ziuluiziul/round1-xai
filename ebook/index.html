@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Ebook + Prompt Pack Grok — PIX</title>
+<style>
+:root{--bg:#0f1419;--card:#1a2332;--text:#e7ecf3;--muted:#9aa8bc;--accent:#7c8cff;--border:#2a3548}
+body{margin:0;font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);padding:2rem 1rem;line-height:1.45}
+main{max-width:740px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.1rem;margin:0 0 1rem}
+a{color:var(--accent)} .muted{color:var(--muted);font-size:.9rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.pix{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.7rem}
+figure{margin:0;background:#0c1017;border:1px solid var(--border);border-radius:8px;padding:.55rem;text-align:center}
+img{width:100%;height:auto} textarea{width:100%;font-size:.62rem;background:#080b10;color:var(--text);border:1px solid var(--border);border-radius:6px}
+button{width:100%;margin-top:.3rem;background:var(--accent);border:0;border-radius:6px;padding:.4rem;font-weight:700;cursor:pointer}
+.price{color:var(--accent);font-weight:700}
+</style></head><body><main>
+<h1>Grok: ebook + prompt pack</h1>
+<p class="muted">Produto novo ROUND1 — PDF gratis amostra / packs pagos via PIX LUIZ (EMV).</p>
+<section class="card"><div class="grid">
+<div><h2>Ebook Research Notes</h2>
+<p class="muted">Chat vs API · planos · checklist</p>
+<p><a href="Grok-Research-ROUND1.pdf"><strong>Baixar PDF</strong></a></p>
+<p>Pago customizado / tip: <span class="price">R$10–100</span></p></div>
+<div><h2>Prompt Pack Pesquisa</h2>
+<p class="muted">10 prompts prontos p/ Grok free</p>
+<p><a href="Grok-Prompt-Pack-Pesquisa.pdf"><strong>Baixar PDF</strong></a></p>
+<p>SKU pack: <span class="price">R$50</span></p></div>
+</div></section>
+<section class="card"><h2>PIX agora</h2>
+<p class="muted">R$10=_1 · R$50=_2 · R$100=_0 · sem R$20</p>
+<div class="pix">
+<figure><figcaption>R$10</figcaption><textarea readonly rows="3">00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17</textarea><button data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17">Copiar</button></figure>
+<figure><img src="../pix/qr_R50.png" alt="R$50"/><figcaption>R$50</figcaption><textarea readonly rows="3">00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58</textarea><button data-pix="00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58">Copiar</button></figure>
+<figure><img src="../pix/qr_R100.png" alt="R$100"/><figcaption>R$100</figcaption><textarea readonly rows="3">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160</textarea><button data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160">Copiar</button></figure>
+</div></section>
+<p class="muted"><a href="../">Oferta briefs</a> · <a href="https://github.com/Ziuluiziul/round1-xai/discussions/1">Discussion</a></p>
+</main>
+<script>document.querySelectorAll('button[data-pix]').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(b.dataset.pix);b.textContent='OK'}catch(e){b.parentElement.querySelector('textarea').select()}})</script>
+</body></html>
