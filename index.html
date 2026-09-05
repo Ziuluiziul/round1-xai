@@ -38,7 +38,7 @@
     <section class="card">
       <h2>Ofertas ROUND1</h2>
       <ul class="offers">
-        <li><span>Brief / pesquisa com fontes (curto)</span><span class="price">R$ 10 ou R$ 50</span></li>
+        <li><span>Brief / pesquisa com fontes (curto)</span><span class="price">R$ 10</span></li>
         <li><span>Brief + fontes ampliado</span><span class="price">R$ 50</span></li>
         <li><span>Conteúdo / copy curta sob pedido</span><span class="price">R$ 10</span></li>
       </ul>
@@ -46,41 +46,47 @@
     </section>
 
     <section class="card">
-      <h2>PIX — QR + copia-cola (EMV do QR; alinhados)</h2>
-      <p class="note" style="margin-top:0">Valores lidos do QR (campo 54). Copia-cola = payload do próprio QR. Recebedor LUIZ.</p>
+      <h2>PIX — texto EMV/CRC (fonte da verdade)</h2>
+      <p class="note" style="margin-top:0">Regra Gamma: confiar em <code>pix_copia_cola_*</code>. PNG só se zbar = texto. Sem R$20 no estoque atual.</p>
       <div class="pix-grid">
         <figure class="pix-card">
-          <img src="pix/qr_4.png" alt="PIX R$ 10" />
-          <figcaption>R$ 10</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 10">00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505micro63041306</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505micro63041306">Copiar PIX</button>
+          <p class="note">Só copia-cola (PNG divergiu do texto — ignorado)</p>
+          <figcaption>R$ 10 · texto _1 <span style="color:#f66">CRC?</span></figcaption>
+          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 10">00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ</textarea>
+          <button type="button" data-pix="00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ">Copiar PIX</button>
         </figure>
         <figure class="pix-card">
           <img src="pix/qr_2.png" alt="PIX R$ 50" />
-          <figcaption>R$ 50</figcaption>
+          <figcaption>R$ 50 · texto _2</figcaption>
           <textarea readonly rows="3" aria-label="PIX copia-cola R$ 50">00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58</textarea>
           <button type="button" data-pix="00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58">Copiar PIX</button>
         </figure>
         <figure class="pix-card">
           <img src="pix/qr_0.png" alt="PIX R$ 100" />
-          <figcaption>R$ 100</figcaption>
+          <figcaption>R$ 100 · texto _0</figcaption>
           <textarea readonly rows="3" aria-label="PIX copia-cola R$ 100">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160</textarea>
           <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160">Copiar PIX</button>
         </figure>
         <figure class="pix-card">
-          <img src="pix/qr_1.png" alt="PIX R$ 200" />
-          <figcaption>R$ 200</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 200">00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17">Copiar PIX</button>
+          <p class="note">Só copia-cola (PNG divergiu do texto — ignorado)</p>
+          <figcaption>R$ 100 · texto _3</figcaption>
+          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 100">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62120508Apoio1006304C205</textarea>
+          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62120508Apoio1006304C205">Copiar PIX</button>
         </figure>
         <figure class="pix-card">
-          <img src="pix/qr_5.png" alt="PIX Livre" />
-          <figcaption>Livre</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola Livre">00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62070503***6304953C</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62070503***6304953C">Copiar PIX</button>
+          <p class="note">Só copia-cola (PNG divergiu do texto — ignorado)</p>
+          <figcaption>R$ 200 · texto _4 <span style="color:#f66">CRC?</span></figcaption>
+          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 200">00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ</textarea>
+          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ">Copiar PIX</button>
+        </figure>
+        <figure class="pix-card">
+          <p class="note">Só copia-cola (PNG divergiu do texto — ignorado)</p>
+          <figcaption>Livre · texto _5 <span style="color:#f66">CRC?</span></figcaption>
+          <textarea readonly rows="3" aria-label="PIX copia-cola Livre">00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ</textarea>
+          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ">Copiar PIX</button>
         </figure>
       </div>
-      <p class="note" style="margin-top:.75rem">Oferta ROUND1: brief R$20 → use valor disponível mais próximo se não houver 20; R$50 = QR validado; R$100 = QR validado.</p>
+      <p class="note" style="margin-top:.75rem">ROUND1: brief R$10 / R$50 / R$100. Recebedor LUIZ.</p>
     </section>
 
     <section class="card">
