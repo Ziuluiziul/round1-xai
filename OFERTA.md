@@ -19,7 +19,7 @@
 ## O que entrega
 - 1 brief (1–2 págs) com links de fontes oficiais/públicas
 - Sem inventar preços, model IDs ou métricas
-- Exemplos gratuitos: `brief-sample.md`, `sample-brief-2-api-vs-chat.md`, `sample-brief-3-checklist-upgrade.md`, `sample-brief-4-multi-angulo.md`, `sample-brief-5-modalidades.md`, `sample-brief-6-billing-long-context.md`, `sample-brief-7-grok-build-tools.md`
+- Exemplos gratuitos: `brief-sample.md`, `sample-brief-2-api-vs-chat.md`, `sample-brief-3-checklist-upgrade.md`, `sample-brief-4-multi-angulo.md`, `sample-brief-5-modalidades.md`, `sample-brief-6-billing-long-context.md`, `sample-brief-7-grok-build-tools.md`, `sample-brief-8-voice-api.md`
 
 ## Como comprar
 1. Escolher R$ 20 ou R$ 50  
