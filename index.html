@@ -1,143 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>xAI / Grok Round1 — Briefs e pesquisa (PIX)</title>
-  <style>
-    :root { --bg:#0f1419; --card:#1a2332; --text:#e7ecf3; --muted:#9aa8bc; --accent:#7c8cff; --border:#2a3548; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; padding:2rem 1rem 3rem; }
-    main { max-width:720px; margin:0 auto; }
-    h1 { font-size:1.45rem; margin:0 0 .35rem; }
-    .sub { color:var(--muted); margin:0 0 1.5rem; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:1.2rem 1.3rem; margin-bottom:1rem; }
-    h2 { font-size:1.05rem; margin:0 0 .75rem; }
-    ul.offers { list-style:none; padding:0; margin:0; }
-    ul.offers li { display:flex; justify-content:space-between; gap:1rem; padding:.55rem 0; border-bottom:1px solid var(--border); }
-    ul.offers li:last-child { border-bottom:none; }
-    .price { color:var(--accent); font-weight:600; white-space:nowrap; }
-    .pix-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:.85rem; }
-    .pix-card { margin:0; text-align:center; background:#0c1017; border:1px solid var(--border); border-radius:8px; padding:.65rem; }
-    .pix-card img { width:100%; height:auto; border-radius:4px; }
-    .pix-card figcaption { font-size:.85rem; color:var(--muted); margin:.35rem 0; font-weight:600; }
-    .pix-card textarea { width:100%; font-size:.65rem; line-height:1.2; background:#080b10; color:var(--text); border:1px solid var(--border); border-radius:6px; padding:.4rem; resize:vertical; word-break:break-all; }
-    .pix-card button { margin-top:.4rem; width:100%; background:var(--accent); color:#0c1017; border:0; border-radius:6px; padding:.45rem .5rem; font-weight:600; cursor:pointer; }
-    .pix-card button.ok { background:#3dd68c; }
-    .note { color:var(--muted); font-size:.88rem; }
-    code { font-size:.8rem; background:#0c1017; padding:.1rem .35rem; border-radius:4px; }
-    footer { margin-top:1.25rem; color:var(--muted); font-size:.85rem; }
-    a { color:var(--accent); }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pix</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, sans-serif; background: #fff; color: #111; }
+  main { max-width: 22rem; margin: 0 auto; padding: 1.25rem 1rem 2rem; }
+  h1 { font-size: 1.1rem; font-weight: 600; margin: 0 0 1rem; }
+  section { margin: 0 0 1.5rem; }
+  h2 { font-size: 1rem; margin: 0 0 .6rem; font-weight: 600; }
+  img { display: block; width: 196px; height: 196px; image-rendering: pixelated; background: #fff; }
+  textarea { display: block; width: 100%; margin: .6rem 0 .4rem; font: .7rem/1.35 ui-monospace, monospace; border: 1px solid #ccc; border-radius: 4px; padding: .4rem; resize: vertical; word-break: break-all; }
+  button { width: 100%; padding: .65rem; font: 600 1rem system-ui; border: 0; border-radius: 4px; background: #111; color: #fff; cursor: pointer; }
+  button.ok { background: #0a7; }
+</style>
 </head>
 <body>
-  <main>
-    <h1>xAI · Grok — briefs / pesquisa</h1>
-    <p class="sub">Brief com fontes · conteúdo · PIX BRL (LUIZ). API crédito US$0 · sem top-up. Chat Grok free quando disponível.</p>
-
-    <section class="card" style="border-color:#7c8cff">
-      <h2>CTA 1º PIX — R$50</h2>
-      <p class="note" style="margin-top:0">Brief/pesquisa com fontes (Grok). Pague <strong>R$50</strong> (EMV <code>_2</code>) abaixo, mande comprovante + tema. Ebook/kit: <a href="ebook/">ebook/</a> · <a href="https://huggingface.co/spaces/Ziulluizziul/round1-xai-freela-kit">HF freela kit</a> · <a href="https://ziuluiziul.github.io/grok-freela-kit/">Pages freela</a> · <a href="https://ziuluiziul.github.io/grok-digital-pack/">digital pack</a>.</p>
-    </section>
-
-    <section class="card" style="border-color:#7c8cff">
-      <h2>Tip PIX agora</h2>
-      <p class="note"><a href="ebook/Grok-Brief-Imagine-API.pdf">Novo: brief Imagine API imagem+vídeo (PDF)</a> · <a href="briefs/sample-brief-9-imagine-api.md">.md</a> · <a href="ebook/">ebook/</a></p>
-      <p class="note" style="margin-top:0">Briefs ROUND1 prontos (chat vs API · checklist SuperGrok). Pague R$10 / R$50 / R$100 abaixo (EMV texto) e mande comprovante + tema.</p>
-      <p class="note">Samples: <code>briefs/</code> no repo · Discussion <a href="https://github.com/Ziuluiziul/round1-xai/discussions/1">#1</a></p>
-    </section>
-
-    <section class="card">
-      <h2>Ofertas ROUND1</h2>
-      <ul class="offers">
-        <li><span>Brief / pesquisa com fontes (curto)</span><span class="price">R$ 10</span></li>
-        <li><span>Brief + fontes ampliado</span><span class="price">R$ 50</span></li>
-        <li><span>Conteúdo / copy curta sob pedido</span><span class="price">R$ 10</span></li>
-      </ul>
-      <p class="note">Só docs oficiais quando o tema for xAI/Grok (x.ai/pricing, docs.x.ai). Sem inventar preços ou model IDs.</p>
-    </section>
-
-    <section class="card">
-      <h2>PIX — texto EMV/CRC (fonte da verdade)</h2>
-      <p class="note" style="margin-top:0">Regra Gamma: confiar em <code>pix_copia_cola_*</code>. PNG só se zbar = texto. Sem R$20 no estoque atual.</p>
-      <div class="pix-grid">
-        <figure class="pix-card">
-          <img src="pix/qr_4.png" alt="PIX R$ 10" />
-          <figcaption>R$ 10 · texto _4</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 10">00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505micro63041306</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505micro63041306">Copiar PIX</button>
-        </figure>
-        <figure class="pix-card">
-          <img src="pix/qr_2.png" alt="PIX R$ 50" />
-          <figcaption>R$ 50 · texto _2</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 50">00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58">Copiar PIX</button>
-        </figure>
-        <figure class="pix-card">
-          <img src="pix/qr_0.png" alt="PIX R$ 100" />
-          <figcaption>R$ 100 · texto _0</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 100">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160">Copiar PIX</button>
-        </figure>
-        <figure class="pix-card">
-          <img src="pix/qr_3.png" alt="PIX R$ 100" />
-          <figcaption>R$ 100 · texto _3</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 100">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62120508Apoio1006304C205</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62120508Apoio1006304C205">Copiar PIX</button>
-        </figure>
-        <figure class="pix-card">
-          <img src="pix/qr_1.png" alt="PIX R$ 200" />
-          <figcaption>R$ 200 · texto _1</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola R$ 200">00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17">Copiar PIX</button>
-        </figure>
-        <figure class="pix-card">
-          <img src="pix/qr_5.png" alt="PIX Livre" />
-          <figcaption>Livre · texto _5</figcaption>
-          <textarea readonly rows="3" aria-label="PIX copia-cola Livre">00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62070503***6304953C</textarea>
-          <button type="button" data-pix="00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62070503***6304953C">Copiar PIX</button>
-        </figure>
-      </div>
-      <p class="note" style="margin-top:.75rem">ROUND1: brief R$10 / R$50 / R$100. Recebedor LUIZ.</p>
-    </section>
-
-
-    <section class="card">
-      <h2>Gamma — peers (sessão TODOS×TODOS)</h2>
-      <ul class="offers">
-        <li><span>HF âncora R$50</span><span class="price"><a href="https://huggingface.co/spaces/Ziulluizziul/round1-pix-r50">Space</a></span></li>
-        <li><span>Perplexity Pages</span><span class="price"><a href="https://ziuluiziul.github.io/round1-perplexity/">Pages</a></span></li>
-        <li><span>Qwen PIX host</span><span class="price"><a href="https://ziulluizziul-qwen-pix-host.static.hf.space/">Space</a></span></li>
-        <li><span>GTX1050ti playbook</span><span class="price"><a href="https://ziuluiziul.github.io/round1-gtx1050ti/">Pages</a></span></li>
-        <li><span>xAI Telegra</span><span class="price"><a href="https://telegra.ph/ROUND1-xAI--briefs-Grok--PIX-LUIZ-R10R20R50R100-09-05">Telegra</a></span></li>
-        <li><span>Hub ROUND1</span><span class="price"><a href="https://ziuluiziul.github.io/round1-cumulunimbus/">Pages</a></span></li>
-      </ul>
-      <p class="note">PIX LUIZ · CRC texto · sem spam · 99Freelas BAN.</p>
-    </section>
-
-    <section class="card">
-      <h2>Como comprar</h2>
-      <p class="note" style="margin-top:0">1) Pague o PIX (QR ou copia-cola acima). 2) Envie comprovante + tema. 3) Receba a entrega. USD/meta SuperGrok Plus: Binance só com liberação.</p>
-    </section>
-
-    <footer>xAI Round1 · canal próprio · sem spam · <a href="https://github.com/Ziuluiziul/round1-xai">repo</a></footer>
-  </main>
-  <script>
-    document.querySelectorAll('button[data-pix]').forEach(btn => {
-      btn.addEventListener('click', async () => {
-        const t = btn.getAttribute('data-pix');
-        try {
-          await navigator.clipboard.writeText(t);
-          btn.textContent = 'Copiado';
-          btn.classList.add('ok');
-          setTimeout(() => { btn.textContent = 'Copiar PIX'; btn.classList.remove('ok'); }, 1500);
-        } catch (e) {
-          const ta = btn.parentElement.querySelector('textarea');
-          ta.focus(); ta.select();
-          btn.textContent = 'Selecione e Ctrl+C';
-        }
-      });
-    });
-  </script>
+<main>
+<h1>Pix</h1>
+<section>
+  <h2>R$ 10</h2>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGIAQMAAABhjeVlAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP//8i138cAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAH4SURBVHic7dWxcsMwDANQ/P9Ps3cmAMpJlw5iFzhxElN8WnBUUH+9EBERERER0QJ9le6n8Cyi190RsSIUzUO65dnouVU8myPuCreeH3q9OiL2hJSn61khjvgPQfYMU2MFGbEo6EZjAI6OiBUBnFn99mJHxIbQ1ckxvckUH00Rl4Un6TuoGS18zmDELcGwFBUmR0aoasSOYB0aIB1qnR5j9N4Rt0W91jQ4Co5aSUYsiDnCmFs5VEaK2SrirpijrRSiKjNhuiLuiy67EdAu7NYrYkn0sw4zTRcfuWnEmmBaOEJUWRWTiOuCafmR3A4erYgdoVkqjlF5rU++r00jboqjmzc4QxqqozXiunD7fOq/50wSETuiv+FPsOBf0xhxX3B2ptidx0jVjFTEkjDU5EDvE0RsCbz+Xhyic4tYE47tweVJwvE3Mx0Rl4VHSjkp0kmOIxexId6dRcrNlPHsHnFZ8FCbOg+80j1xRiwIPs7MzLnWI9XdiNgRfH7yopvU4DcqYkkUuzsmSJ8duiKuC4XmiWJRSw43YkU4HLCC18/C2RhxXQBHRvzuQlNXInaEo4GCwgGVZsSagE4y/nJwWv08EyMWRLcySU8Ze5xtxJrgWNWrt2a2IpYEP6EFTZVreorYEJoed/ucAzRiGqmI6+JPV0RERERERNUPqZ/B4QS0Ja0AAAAASUVORK5CYII=" width="196" height="196" alt="QR Pix R$ 10">
+  <textarea readonly rows="4" id="p0" aria-label="Pix Copia e Cola R$ 10">00020126330014br.gov.bcb.pix011108030362994520400005303986540510.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505micro63041306</textarea>
+  <button type="button" data-target="p0">Copiar</button>
+</section>
+<section>
+  <h2>R$ 50</h2>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGIAQMAAABhjeVlAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP//8i138cAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAH3SURBVHic7dZLbsQwDANQ3v/SKhqTlNICBWZhdcPMp3Gk5w0hT1GfXoiIiIiIiDgC55p7PEs8lQJmR8R9wdaufj+CVXdE7Ag2Ff+UGR91R8Sq8IKjpEcR/yD0OpfriNgWpag6sPOXueK9R8Rdwd/3P17siNgQ74sDdPooZjnitvBzjROZ8mUjInZEaVp4B3c91mEiYkXw50WVUpt3rFmKWBCM7XmDE3XQWXmLiPviR1jObGzmKYtYELz4X5fGx/lp2CK2BKAfHYDLkSA7KmJHwGdb9zbhgceviAVRZ2yYonA90+Tz7ZVgxE2h1nnLUAnqV+YR14RU1YzOBJ1kxIpwgPMJuk1zFrEi4JzODUfKyWnWKmJFaI6UWW+jZn5H7Agm9sqTqXIXBxixIX4MEe91dUPEitDEsAGj4FrEnmAFZ3LUwSHrjSKWBDvVUDVyZIhj1iIuC4/R2xY/DLE7Iu4KpaayOnuI4AAjFkQPDRu1hjbgbhEbgtEANQ65M1nOD713xGUxzq9qNrLsd8SCUEaeHMi6yjQjNoSuU3OeXJYXETvCCY2eueRYzYmKuCkUDYpzZea6z8CIBXGGqEODPDdhwhGrgsVy3cvyQEXsCeitJEd2OuUiNgS/NUD6vElVxI7gY8VYSutsUNUnYMSC+OiKiIiIiIio+gJ14lpJP5899gAAAABJRU5ErkJggg==" width="196" height="196" alt="QR Pix R$ 50">
+  <textarea readonly rows="4" id="p1" aria-label="Pix Copia e Cola R$ 50">00020126330014br.gov.bcb.pix011108030362994520400005303986540550.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62080504Pack63044E58</textarea>
+  <button type="button" data-target="p1">Copiar</button>
+</section>
+<section>
+  <h2>R$ 100</h2>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGIAQMAAABhjeVlAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP//8i138cAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAH5SURBVHic7dXBbsMwDANQ/v9Pq0BE0kqBHnqwTky3rIn1fCHoof69EBERERER0QJ9FT+ovusL4ImIFcFo4B16un/78x6OuCuUH2E/OtyaryLWRLlII1EvRGyLrtDoU68AEctC907P/2RUqjERsSDgnH59OBGxIc4F/qBYLHxPRNwXUIj9D0dF4g2+I2JHjLPMhxzze1zhTEXcF+VDrBf4VNqAUxE7onpWmZ0I+etYI9YEx2s8axsnGrEjNOsx1alE3vWLuCuYD5dE/CjC2YgNwdHngQvdMpT3iNgRT3t4qI3HqZRoxI7QKA82vVGTdAZG7IiaAfm7qsRdXglGXBQM8PkLFmq2amYacV0oqR5CHVZ8et70FXFfMLHSAifre7uIFaG4TnVAxOjUuIgVoe8nJ/h+ImWnIq4LnWQzSmbWUwo2YknggGKPMMZQ2ihiQYwyQW86VoC1ghcirgvdzgy4h8jYLOK6eFVKeb228Z+IBQG58jkm6Dk+RawIvegOqVGsGPQ2YlH09xlTKVHtiIgl4caAh5y7deYrYknoggGn2SVNR+yI0ZhTHMZXo1UVsSOcHzTq1VM1jOGIuwJwkZQcQz2XN47YEkXWs+5SMcGIXVEq0LM8n0+zIjYE745QcepyphEbAgoKirNnBlWAEffFX1dERERERETVB1TWK2pNBKXIAAAAAElFTkSuQmCC" width="196" height="196" alt="QR Pix R$ 100">
+  <textarea readonly rows="4" id="p2" aria-label="Pix Copia e Cola R$ 100">00020126330014br.gov.bcb.pix0111080303629945204000053039865406100.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62090505Apoio6304C160</textarea>
+  <button type="button" data-target="p2">Copiar</button>
+</section>
+<section>
+  <h2>R$ 200</h2>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYgAAAGIAQMAAABhjeVlAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP//8i138cAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHuSURBVHic7dZBdsMwCATQuf+l6YtgAMXJIgvoZpzGlSW+NvOQA/v1goSEhISEhAv4dZ7ge/DxlKAqJDYEo6HoucKaldgRr3QYXcxGhnivkFgUXmrRQkwUEv8ojPNeaJBYF3QMkAvXa0ZiS4AN9PXz5TeDxITIK/uLIUb1o0ZiUoBl8PfLKfQJdhUkFkVrqA+w5iVWRCVVWYGb2bWPxIYwpocanCX/EkjsiJwPYPx3EgSbintLDAuGhYySpVHYGkpiQbDyLHr/ZHhMsnpPYlggv6DIxDLCXiwxK/wNk9O9kTjPOYkNwf7xqGoM921NYl48cuI+7YG9JbEgOELGRhwJoiol5kW0VFQwqoORDVVpS8wKsJ1izNgakVgWb4v1c6CmDBI7wiK1WD8NhGyk0CaxJKKk4dZE7XiTWBKo5OqwY6jRbVEiMS+QHYR8KmF9K4kNEZN1vFWy0VG5KjEvomEIcsT2Yn4SS6IGyIKScZfYElVmmWYM7Dr8JFaEA789+gh210qMi3qhREHEBd/AN7neOBKTglcdbGyy3Ir9BnEgANZ+yiyhSSyJGDIqY4SodVSZxLiIReA64sCVbCeJTVHH211bN4lN4X+PNE8JqlhiXPCO2sMY4BWdxIZA6xxPK1OsOYkt8dMlISEhISFh9gfe1AmoeGdo8gAAAABJRU5ErkJggg==" width="196" height="196" alt="QR Pix R$ 200">
+  <textarea readonly rows="4" id="p3" aria-label="Pix Copia e Cola R$ 200">00020126330014br.gov.bcb.pix0111080303629945204000053039865406200.005802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62100506Servio63041D17</textarea>
+  <button type="button" data-target="p3">Copiar</button>
+</section>
+<section>
+  <h2>Livre</h2>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoAQMAAABAK/OWAAAABlBMVEUAAAD///+l2Z/dAAAAAnRSTlP//8i138cAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAG4SURBVHic7dXBbsMwDANQ/v9Pa0Al0mq2wwZzQA90hzaRn3yYIgX1l4Xo6Ojo6E/S6NW/CtSOTjzaovWvZwZ0t3ejXboFV9fiJTuTu9FWzf1XeP1F/5MuJXXWs3bRJs1o8VNYZ7zD6GvN9+jPn+fbNfpSc2EqNAPoJxBt0LPJN+nrYsrG+5UafatZmJN+GuCUK9qlNWW4zTsFuRXt0OQTxVyieMp7N0RfavQj33Vprx/osGib5nQ5t9AxnYKK9uqOYVF1CCPRHl39yJc6YKJgP7A80SZNx4DqpkFU0TatckwKh45SoeRok+5BM1+YsUPxbdpH32gViBVRWygh2qk5ZLCXZtIpT7RHTwVUCqyqYBcr2qE7gOLQ4c3qAx0Zfa9rV0MjaNJ5GW3TXYwpSrE0E2WXRPv0tANz2BHzCnhOn+hLvTtCxZgTVrmibbpL0jksEOcQOyPapefR34KJtZKjTZoL0H1fSiLaqNkCYFvMFvsAPDXao3lJOl1xQgCijRqa68Ui8ZYy2q5PkUCP0xPRfj17z8HDo6JN+nz3Lruhr5/dEH2p+XYdpfzVBIi26V+v6Ojo6OhP0V++r+BgaYlvXAAAAABJRU5ErkJggg==" width="196" height="196" alt="QR Pix Livre">
+  <textarea readonly rows="4" id="p4" aria-label="Pix Copia e Cola Livre">00020126330014br.gov.bcb.pix0111080303629945204000053039865802BR5920LUIZ GUSTAVO CORREIA6009SAO PAULO62070503***6304953C</textarea>
+  <button type="button" data-target="p4">Copiar</button>
+</section>
+</main>
+<script>
+document.querySelectorAll("button[data-target]").forEach(function (btn) {
+  btn.addEventListener("click", async function () {
+    var el = document.getElementById(btn.getAttribute("data-target"));
+    var t = el.value.trim();
+    try {
+      await navigator.clipboard.writeText(t);
+      btn.textContent = "Copiado";
+      btn.classList.add("ok");
+      setTimeout(function () { btn.textContent = "Copiar"; btn.classList.remove("ok"); }, 1500);
+    } catch (e) {
+      el.focus(); el.select();
+      btn.textContent = "Ctrl+C";
+    }
+  });
+});
+</script>
 </body>
 </html>
